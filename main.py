@@ -89,10 +89,6 @@ async def asr(file: UploadFile = File(...)):
 
                     result_duration[source] += duration  
                     last_source = source
-            
-            # else:
-            #     partial_result = rec.PartialResult()
-            #     print("Partial result:", partial_result)
 
     # Удаляем временные файлы
     os.remove(file_location)
